@@ -11,7 +11,7 @@ testB: 0.81680282
 ## 1. 解题方案整体思路：
 
 + Detector: 
-    - Backbone: CBNetV2+Swin Transformer
+    - Backbone: HTC+CBNetV2+Swin Transformer
     - RCNN Head:
         - box head:
             - 4Conv+1FC
