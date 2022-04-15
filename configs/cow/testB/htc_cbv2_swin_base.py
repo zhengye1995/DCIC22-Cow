@@ -237,7 +237,6 @@ model = dict(
             score_thr=0.0001,
             # nms=dict(type='nms', iou_threshold=0.5),
             nms=dict(type='soft_nms', iou_threshold=0.5, min_score=0.001),
-            # nms=dict(type='soft_nms', iou_threshold=0.5, min_score=0.001, sigma=0.5, method='gaussian',),
             max_per_img=100,
             mask_thr_binary=0.5)))
 
@@ -283,7 +282,6 @@ test_pipeline = [
     dict(
         type='MultiScaleFlipAug',
         img_scale=[(900, 3000), (700, 3000), (500, 3000)],
-        # img_scale=[(1300, 3000), (1100, 3000), (900, 3000), (700, 3000), (500, 3000)],
         flip=True,
         transforms=[
             dict(type='Resize', keep_ratio=True),
@@ -346,5 +344,5 @@ log_level = 'INFO'
 load_from = 'data/pretrained/htc_cbv2_swin_base22k_patch4_window7_mstrain_400-1400_giou_4conv1f_adamw_20e_coco.pth'
 resume_from = None
 workflow = [('train', 1)]
-work_dir = 'work_dirs/cbnet_swin_base_36ep_bs8_copy_paste_cutout_PhotoMetricDistortion_4gpu_masklossx3'
+work_dir = 'work_dirs/cbnet_swin_base'
 
