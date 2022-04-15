@@ -45,7 +45,7 @@ testB: 0.81680282
 
 ## 3. 文件目录说明
 进行训练测试时需要的具体的文件如下：
-训练好的模型文件可以从[百度网盘]下载(https://pan.baidu.com/s/1PaJB02zoHfP2SCuZ08XrpA?pwd=1ygr)
+训练好的模型文件可以从[百度网盘](https://pan.baidu.com/s/1PaJB02zoHfP2SCuZ08XrpA?pwd=1ygr)下载
 ```
 |-- data
 	|-- user_data
